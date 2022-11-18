@@ -12,19 +12,13 @@
 
   <h1> L. R. Berg&eacute;'s fav quotes</h1>
 
-  <header>
-    
-  </header>
-
-  <hr>
-
   <article>
     <p>Below, you can find one of my favorite quotes. You just have to click. </p>
     <p>There are two quotes in total: one appears with 95% chance, and the other with 5% chance. </p>
     <p>To find the two quotes, you can click and reload a lot... or scrape it. </p>
 
     <div class="quote-container">
-      <p id="quote">Click me to discover the quote.</p>
+      <p id="quote">Click me to discover the quote</p>
     </div>
 
     <div id="qmark">
@@ -33,11 +27,9 @@
 
   </article> 
 
-  <hr>
-
   <article class="purpose">
     <div id="expl-container">
-      <h2 id="explanation">Purpose <span class="arrow">&#9660;</span></h2>
+      <h2 id="explanation">Purpose</h2>
       <p>The purpose of this webpage is to illustrate how to 
         scrape pages containing dynamic content.</p>
     
@@ -61,10 +53,8 @@ function expandExpl(){
   let explInfo = document.querySelector("#expl-container");
   if(explState == 0){
     explInfo.style.display = "block";
-    document.querySelector(".arrow").innerHTML = "&#9650;";
   } else {
     explInfo.style.display = "none";
-    document.querySelector(".arrow").innerHTML = "&#9660;";
   }
   explState = 1 - explState;
 }
