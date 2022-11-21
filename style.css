@@ -32,7 +32,7 @@ body {
   font-size: larger;
   padding: 1em;
   max-width: 1200px;
-  min-width: 800px;
+  min-width: 600px;
   margin: auto;
   height: 100vh;
 
@@ -66,7 +66,8 @@ footer {
   width: calc(100% - 100px);
   max-width: 1400px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.911);
+  /* background-color: rgba(255, 255, 255, 0.911); */
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .cursif {
@@ -149,7 +150,7 @@ q.author::before {
 #qmark {
   width: 2.2em;
   height: 2.2em;
-  border: 1px solid black;
+  border: 2px solid #00000099;
   border-radius: 50%;
 
   display: flex;
@@ -158,6 +159,8 @@ q.author::before {
   align-items: center;
 
   margin-top: -3em;
+
+  color: #00000099;
 }
 
 #qmark:hover {
